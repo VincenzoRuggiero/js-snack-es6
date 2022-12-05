@@ -51,7 +51,11 @@ const zucchine = [
   },
 ];
 
+let pesoMedio = 0;
+
 for (let i = 0; i < zucchine.length; i++) {
-  let sum = zucchine[i].peso + zucchine[i].peso;
-  console.log(sum);
+  let pesoTotale = pesoTotale + zucchine[i].peso;
+  console.log(pesoTotale);
+  pesoMedio = pesoTotale / zucchine.length;
+  console.log(pesoMedio);
 }

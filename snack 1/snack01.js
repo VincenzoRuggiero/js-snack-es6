@@ -63,3 +63,14 @@ const cars = [
 const benzina = [];
 const diesel = [];
 const others = [];
+
+for (let i = 0; i < cars.length; i++) {
+  const currentCar = cars[i];
+  if (currentCar.alimentazione === "benzina") {
+    benzina.push(currentCar);
+  } else if (currentCar.alimentazione === "diesel") {
+    diesel.push(currentCar);
+  } else {
+    others.push(currentCar);
+  }
+}
