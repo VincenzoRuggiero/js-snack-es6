@@ -62,6 +62,6 @@ const persone = [
 
 let canDrive = persone.filter((person) => {
   if (person.age >= 18) {
-    return console.log(`${person.nome} può guidare`);
+    return console.log(`${person.nome} ${person.cognome} può guidare`);
   }
 });
