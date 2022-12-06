@@ -60,8 +60,10 @@ const persone = [
   },
 ];
 
-let canDrive = persone.filter((person) => {
+let canDrive = persone.map((person) => {
   if (person.age >= 18) {
-    return console.log(`${person.nome} ${person.cognome} può guidare`);
+    console.log(`${person.nome} ${person.cognome} può guidare`);
+  } else {
+    console.log(`${person.nome} ${person.cognome} non può guidare`);
   }
 });
